@@ -1,16 +1,19 @@
 package hu.petrik.szalaiszabolcs_restapi;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import hu.petrik.szalaiszabolcs_restapi.databinding.ActivityListResultBinding;
-import hu.petrik.szalaiszabolcs_restapi.databinding.ActivityMainBinding;
 
 public class ListResultActivity extends AppCompatActivity {
 
     ActivityListResultBinding binding;
+    List<City> cities = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
